@@ -1,0 +1,139 @@
+header {
+  // ヘッダー上段
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 180px;
+
+    .top-left {
+      display: flex;
+      align-items: flex-end;
+      gap: 58px;
+    }
+
+    .top-right {
+      display: flex;
+    }
+    // 検索窓
+    .search-box {
+      width: 237px;
+      margin: 10px;
+
+      form {
+        width: 237px;
+        display: flex;
+        border: 1px solid $line-gray2;
+      }
+
+      // 入力欄
+      input[type="text"] {
+        height: 32px;
+        width: 76%;
+      }
+
+      // 検索ボタン
+      input[type="submit"] {
+        color: white;
+        background-color: $orange;
+        width: 24%;
+        height: 32px;
+      }
+    }
+    // マイページへ
+    .my-page-link {
+      width: 111px;
+      height: 58px;
+      font-size: 1.6em;
+      line-height: 23.17px;
+      font-weight: bold;
+      color: white;
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+      margin: 0 8px 0 12px;
+    }
+
+    // ログアウトボタン
+    .logout-button {
+      width: 160px;
+      height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6em;
+      line-height: 23.17px;
+      font-weight: bold;
+      color: white;
+      background-color: $glay-light;
+      border-radius: 2px;
+    }
+
+    .logout-button::after {
+      content: "";
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      background-image: url(../images/logout-icon.svg);
+      background-size: contain;
+      vertical-align: middle;
+    }
+  }
+
+  // ヘッダー下段
+  .down-header {
+    width: 100%;
+    height: 58px;
+    background-color: $orange;
+
+    .header-navi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      ul {
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.6em;
+        line-height: 23.17px;
+        font-weight: bold;
+        padding: 0 33px;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      li:before {
+        content: "";
+        width: 1px;
+        height: 54px;
+        box-shadow: -1px 0px 0px #f4b86f;
+        background-color: #bb6906;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: -15px;
+      }
+
+      li:last-child:after {
+        content: "";
+        width: 1px;
+        height: 54px;
+        box-shadow: -1px 0px 0px #f4b86f;
+        background-color: #bb6906;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: -15px;
+      }
+    }
+  }
+}

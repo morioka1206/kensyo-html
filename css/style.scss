@@ -43,6 +43,7 @@ select,
 textarea {
   border: none;
   padding-left: 10px;
+  outline: none;
 }
 
 textarea {
@@ -60,3 +61,6 @@ body {
   color: $black;
   font-weight: 400;
 }
+
+// SCSSファイル読み込み
+@import "../layout/header";
