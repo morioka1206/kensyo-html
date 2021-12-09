@@ -25,6 +25,14 @@ textarea {
   resize: none;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -151,4 +159,35 @@ header .down-header .header-navi li:last-child:after {
   position: absolute;
   right: 0;
   top: -15px;
+}
+
+footer {
+  width: 100%;
+  height: 288px;
+  background-color: #404041;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .footer-wrapper {
+  display: flex;
+  gap: 68px;
+  transform: translate(-20%);
+}
+footer .footer-wrapper .footer-links {
+  display: flex;
+  font-size: 1.4em;
+  line-height: 28px;
+  gap: 40px;
+}
+footer .footer-wrapper .footer-category {
+  position: relative;
+  margin-left: 12px;
+}
+footer .footer-wrapper .footer-category::before {
+  content: url(../images/footer-category-arrow.svg);
+  position: absolute;
+  top: -6%;
+  left: -12%;
 }/*# sourceMappingURL=style.css.map */
