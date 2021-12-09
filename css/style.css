@@ -190,4 +190,123 @@ footer .footer-wrapper .footer-category::before {
   position: absolute;
   top: -6%;
   left: -12%;
+}
+
+.prize-list-wrapper {
+  width: 45%;
+  height: 1294px;
+  background-color: #fcbd70;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.prize-list-wrapper .prize-contents {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+.prize-list-wrapper .prize-contents .each-prize {
+  width: 100%;
+  height: 182px;
+  background-color: white;
+  z-index: 1;
+  filter: drop-shadow(0 0 4px #00000040);
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-list-information-top {
+  display: flex;
+  gap: 12px;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-list-area {
+  width: 76px;
+  height: 17px;
+  border-radius: 2px;
+  background-color: white;
+  color: #f7941c;
+  font-size: 1.2em;
+  line-height: 10px;
+  border: 1px solid #f7941c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-list-number-winners {
+  width: 127px;
+  height: 17px;
+  border-radius: 2px;
+  background-color: #f7941c;
+  color: white;
+  font-size: 1.2em;
+  line-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-product-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 23.17px;
+  text-align: justify;
+  margin-top: 10px;
+  color: #404041;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-list-end-date {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 20.27px;
+  color: #f7941c;
+  margin-top: 10px;
+}
+.prize-list-wrapper .prize-contents .each-prize .prize-list-details-button {
+  width: 198px;
+  height: 39px;
+  background-color: #ea432d;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.prize-list-wrapper .pagenation {
+  margin: 0 auto;
+}
+.prize-list-wrapper .pagenation .pagenation-information {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  margin-top: 20px;
+}
+.prize-list-wrapper .pagenation .pagenation-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.prize-list-wrapper .pagenation .pagenation-numbers .pagenation-number {
+  width: 36px;
+  height: 42px;
+  border-radius: 2px;
+  color: #f7941c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edddca;
+}
+.prize-list-wrapper .pagenation .pagenation-numbers .current {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

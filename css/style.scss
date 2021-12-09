@@ -13,6 +13,10 @@ $blue: #3369a9;
 $line-gray1: #e8e8e8;
 $line-gray2: #d1d1d1;
 
+// 背景色
+$back-orange: #fcbd70;
+$baci-beige: #edddca;
+
 // WEBフォント
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 
@@ -73,3 +77,4 @@ body {
 // SCSSファイル読み込み
 @import "../layout/header";
 @import "../layout/footer";
+@import "../layout/prize";

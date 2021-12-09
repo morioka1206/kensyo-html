@@ -1,0 +1,135 @@
+.prize-list-wrapper {
+  width: 45%;
+  height: 1294px;
+  background-color: $back-orange;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .prize-contents {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+
+    .each-prize {
+      width: 100%;
+      height: 182px;
+      background-color: white;
+      z-index: 1;
+      filter: drop-shadow(0 0 4px #00000040);
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+
+      .prize-list-information-top {
+        display: flex;
+        gap: 12px;
+      }
+
+      // エリア
+      .prize-list-area {
+        width: 76px;
+        height: 17px;
+        border-radius: 2px;
+        background-color: white;
+        color: $orange;
+        font-size: 1.2em;
+        line-height: 10px;
+        border: 1px solid $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // 当選人数
+      .prize-list-number-winners {
+        width: 127px;
+        height: 17px;
+        border-radius: 2px;
+        background-color: $orange;
+        color: white;
+        font-size: 1.2em;
+        line-height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // 懸賞のタイトル
+      .prize-product-title {
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 23.17px;
+        text-align: justify;
+        margin-top: 10px;
+        color: $gray;
+      }
+
+      .prize-list-end-date {
+        font-size: 1.4em;
+        font-weight: bold;
+        line-height: 20.27px;
+        color: $orange;
+        margin-top: 10px;
+      }
+      // 詳細を見るボタン
+      .prize-list-details-button {
+        width: 198px;
+        height: 39px;
+        background-color: $red;
+        border-radius: 2px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.4em;
+        line-height: 20.27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  }
+
+  .pagenation {
+    margin: 0 auto;
+
+    .pagenation-information {
+      font-size: 1.4em;
+      line-height: 20.27px;
+      margin-top: 20px;
+    }
+
+    .pagenation-numbers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+
+      .pagenation-number {
+        width: 36px;
+        height: 42px;
+        border-radius: 2px;
+        color: $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $baci-beige;
+      }
+
+      .current {
+        background-color: white;
+      }
+    }
+  }
+}
