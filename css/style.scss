@@ -9,6 +9,9 @@ $orange: #f7941c;
 $red: #ea432d;
 $blue: #3369a9;
 
+// サブカラー
+$s-orange: #ffca89;
+
 // ラインカラー
 $line-gray1: #e8e8e8;
 $line-gray2: #d1d1d1;
@@ -17,6 +20,7 @@ $line-gray2: #d1d1d1;
 $back-orange: #fcbd70;
 $back-beige: #edddca;
 $back-color: #f0eeea;
+$back-l-gray: #f5f5f5;
 
 // WEBフォント
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
@@ -81,3 +85,4 @@ body {
 @import "../layout/footer";
 @import "../layout/prize";
 @import "../layout/notification";
+@import "../layout/prize-navi";

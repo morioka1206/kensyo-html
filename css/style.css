@@ -377,4 +377,179 @@ footer .footer-wrapper .footer-category::before {
   content: url(../images/arrow.svg);
   transform: translateY(3px);
   margin-left: 17px;
+}
+
+.side-navi-wrapper {
+  width: 20.8%;
+}
+.side-navi-wrapper .prize-navi-heading {
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 23.17px;
+  color: #f7941c;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.side-navi-wrapper .navi-column {
+  height: 40px;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  color: #404041;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+}
+.side-navi-wrapper .navi-column .navi-number-winners {
+  height: 16px;
+  background-color: #ffca89;
+  border-radius: 1px;
+  font-size: 1.2em;
+  line-height: 17.38px;
+  color: white;
+  text-align: center;
+  margin-left: 9px;
+}
+.side-navi-wrapper .navi-column::after {
+  content: url(../images/navi-arrow.svg);
+  position: absolute;
+  right: 10px;
+  top: 26%;
+}
+.side-navi-wrapper .prize-winner-navi {
+  border-top: 2px solid #f7941c;
+  border-radius: 2px;
+  background-color: white;
+}
+.side-navi-wrapper .prize-winner-navi .winner-heading::before {
+  content: url(../images/navi-present.svg);
+  margin-right: 6.7px;
+  transform: translateY(7%);
+}
+.side-navi-wrapper .prize-end-date-navi {
+  border-top: 2px solid #f7941c;
+  border-radius: 2px;
+  margin-top: 30px;
+  background-color: white;
+}
+.side-navi-wrapper .prize-end-date-navi .end-date-heading::before {
+  content: url(../images/navi-clock.svg);
+  margin-right: 6.7px;
+  transform: translateY(7%);
+}
+.side-navi-wrapper .prize-area-select-navi {
+  border-top: 2px solid #f7941c;
+  border-radius: 2px;
+  margin-top: 30px;
+  background-color: white;
+}
+.side-navi-wrapper .prize-area-select-navi .area-navi-column {
+  height: 37px;
+  font-size: 1.2em;
+  line-height: 17.38px;
+  font-weight: bold;
+  color: #f7941c;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+.side-navi-wrapper .prize-area-select-navi .area-select-heading::before {
+  content: url(../images/navi-map.svg);
+  margin-right: 6.7px;
+  transform: translateY(7%);
+}
+.side-navi-wrapper .prize-area-select-navi .area-navi-column:after {
+  content: url(../images/navi-select-area-arrow.svg);
+  position: absolute;
+  right: 10px;
+  top: 26%;
+}
+.side-navi-wrapper .prize-area-select-navi .area-select {
+  display: none;
+}
+.side-navi-wrapper .prize-area-select-navi .navi-area {
+  height: 0;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  text-decoration: underline;
+  padding-left: 10px;
+  transition: 0.1s;
+}
+.side-navi-wrapper .prize-area-select-navi .area {
+  height: 24px;
+  line-height: 14.48px;
+  color: #404041;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.side-navi-wrapper .prize-area-select-navi .area-select:checked + .area-navi-column + .navi-area {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  background-color: #f5f5f5;
+}
+.side-navi-wrapper .prize-popular-navi {
+  border-top: 2px solid #f7941c;
+  border-radius: 2px;
+  margin-top: 30px;
+  background-color: white;
+  padding: 0 10px;
+}
+.side-navi-wrapper .prize-popular-navi .popular-heading::before {
+  content: url(../images/navi-crown.svg);
+  margin-right: 6.7px;
+  transform: translateY(11%);
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column {
+  display: flex;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 0;
+  gap: 11px;
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column .navi-popular-thumbnail-image img {
+  width: 80px;
+  height: 80px;
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column .popular-prize-information .popular-prize-information-top {
+  display: flex;
+  gap: 6px;
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column .popular-prize-information .popular-prize-information-top .popular-prize-area {
+  width: 68px;
+  height: 14px;
+  border-radius: 2px;
+  background-color: white;
+  color: #f7941c;
+  font-size: 1em;
+  line-height: 10px;
+  border: 1px solid #f7941c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column .popular-prize-information .popular-prize-information-top .polular-prize-number-winners {
+  height: 14px;
+  border-radius: 2px;
+  background-color: #f7941c;
+  color: white;
+  font-size: 1em;
+  line-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+.side-navi-wrapper .prize-popular-navi .navi-popular-column .popular-prize-information .polular-prize-information-down {
+  font-size: 1.2em;
+  line-height: 17.38px;
+  font-weight: bold;
+  margin-top: 13px;
 }/*# sourceMappingURL=style.css.map */
