@@ -1,5 +1,5 @@
 // テキストカラー
-$black: #333333;
+$black: #555555;
 $gray: #404041;
 $glay-light: #b5b5b5;
 $link-blue: #00a3ff;
@@ -15,7 +15,8 @@ $line-gray2: #d1d1d1;
 
 // 背景色
 $back-orange: #fcbd70;
-$baci-beige: #edddca;
+$back-beige: #edddca;
+$back-color: #f0eeea;
 
 // WEBフォント
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
@@ -72,9 +73,11 @@ body {
   font-size: 10px;
   color: $black;
   font-weight: 400;
+  background-color: $back-color;
 }
 
 // SCSSファイル読み込み
 @import "../layout/header";
 @import "../layout/footer";
 @import "../layout/prize";
+@import "../layout/notification";

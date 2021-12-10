@@ -1,0 +1,77 @@
+// お知らせ
+.notification-wrapper {
+  width: 45%;
+  border-radius: 2px;
+  border-top: 6px solid $orange;
+  background-color: white;
+  margin: 0 auto;
+
+  // お知らせ
+  .notification-heading {
+    height: 48px;
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 34.75px;
+    border-bottom: 2px solid $orange;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 14px;
+  }
+
+  // それぞれのお知らせ
+  .each-notification {
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    gap: 52px;
+    align-items: center;
+    position: relative;
+    // border-bottom: 1px solid $line-gray2;
+
+    // お知らせの日付
+    .notification-date {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 1.4em;
+      line-height: 16.41px;
+      color: $orange;
+    }
+
+    // お知らせのタイトル
+    .notification-title {
+      font-size: 1.4em;
+      line-height: 20.27px;
+      color: $black;
+    }
+  }
+
+  .each-notification::after {
+    content: "";
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: $line-gray2;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+  }
+
+  // 一覧はこちら
+  .notification-link {
+    height: 45px;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 20.27px;
+    color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15.6px;
+  }
+
+  .notification-link::after {
+    content: url(../images/arrow.svg);
+    transform: translateY(3px);
+    margin-left: 17px;
+  }
+}

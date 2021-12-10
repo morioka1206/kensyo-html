@@ -1,6 +1,7 @@
 .prize-list-wrapper {
   width: 45%;
   height: 1294px;
+  border-radius: 2px;
   background-color: $back-orange;
   display: flex;
   justify-content: flex-start;
@@ -120,11 +121,13 @@
         width: 36px;
         height: 42px;
         border-radius: 2px;
+        font-size: 1.9em;
+        line-height: 27.51px;
         color: $orange;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $baci-beige;
+        background-color: $back-beige;
       }
 
       .current {

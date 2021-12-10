@@ -39,8 +39,9 @@ body {
   scroll-behavior: smooth;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 10px;
-  color: #333333;
+  color: #555555;
   font-weight: 400;
+  background-color: #f0eeea;
 }
 
 header .top-header {
@@ -195,6 +196,7 @@ footer .footer-wrapper .footer-category::before {
 .prize-list-wrapper {
   width: 45%;
   height: 1294px;
+  border-radius: 2px;
   background-color: #fcbd70;
   display: flex;
   justify-content: flex-start;
@@ -301,6 +303,8 @@ footer .footer-wrapper .footer-category::before {
   width: 36px;
   height: 42px;
   border-radius: 2px;
+  font-size: 1.9em;
+  line-height: 27.51px;
   color: #f7941c;
   display: flex;
   justify-content: center;
@@ -309,4 +313,68 @@ footer .footer-wrapper .footer-category::before {
 }
 .prize-list-wrapper .pagenation .pagenation-numbers .current {
   background-color: white;
+}
+
+.notification-wrapper {
+  width: 45%;
+  border-radius: 2px;
+  border-top: 6px solid #f7941c;
+  background-color: white;
+  margin: 0 auto;
+}
+.notification-wrapper .notification-heading {
+  height: 48px;
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 34.75px;
+  border-bottom: 2px solid #f7941c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 14px;
+}
+.notification-wrapper .each-notification {
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  gap: 52px;
+  align-items: center;
+  position: relative;
+}
+.notification-wrapper .each-notification .notification-date {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 16.41px;
+  color: #f7941c;
+}
+.notification-wrapper .each-notification .notification-title {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  color: #555555;
+}
+.notification-wrapper .each-notification::after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 1px;
+  background-color: #d1d1d1;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+.notification-wrapper .notification-link {
+  height: 45px;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 20.27px;
+  color: #404041;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15.6px;
+}
+.notification-wrapper .notification-link::after {
+  content: url(../images/arrow.svg);
+  transform: translateY(3px);
+  margin-left: 17px;
 }/*# sourceMappingURL=style.css.map */
