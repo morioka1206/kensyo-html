@@ -143,6 +143,13 @@
       visibility: visible;
       background-color: $back-l-gray;
     }
+
+    .area-select:checked + .area-navi-column:after {
+      display: block;
+      transform: rotateX(180deg);
+      // top: 4.8px;
+      top: 4.85px;
+    }
   }
 
   // 人気の懸賞から選ぶ
