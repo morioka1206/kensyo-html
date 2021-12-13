@@ -4,6 +4,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 14px 180px;
+    background-color: white;
+    filter: drop-shadow(0 2px 2px #bb690680);
 
     .top-left {
       display: flex;

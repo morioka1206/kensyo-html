@@ -1,0 +1,75 @@
+<!-- ユーザー仮登録ページ -->
+<!-- 応募詳細ページ -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- webフォント -->
+  <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 同じ部分が多いのでJQueryでファイルを分割したものを読み込み -->
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("./page-parts/_header.html");
+      $("#footer").load("./page-parts/_footer.html");
+      $("#prize-list").load("./page-parts/_prize-list.html");
+      $("#notification").load("./page-parts/_notification.html");
+      $("#prize-navi").load("./page-parts/_prize-navi.html");
+
+
+    });
+  </script>
+  <title>官公庁　懸賞課</title>
+  </title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <!-- 仮登録 -->
+  <div class="provisional-registration-wrapper">
+    <div class="registration-stage-headings">
+      <div class="stage-heading active">仮登録</div>
+      <div class="stage-heading">仮登録完了</div>
+      <div class="stage-heading">本登録</div>
+      <div class="stage-complete">登録完了</div>
+    </div>
+    <div class="provisional-registration-title">仮登録フォーム</div>
+    <div class="provisional-registration-message">
+      <p>次の項目を入力して確認画面送信してください。</p>
+      <p>入力されたメールアドレスに本登録ページのURLを送付します。</p>
+    </div>
+
+    <!-- 仮登録フォーム -->
+    <div class="provisional-resgistration-form">
+      <form action="post">
+        <div class="label">
+          <label for="mail">メールアドレス</label>
+          <div class="required-input">必須</div>
+        </div>
+        <div class="input"><input type="text" id="mail" placeholder="メールアドレスを入力する"></div>
+        <div class="label">
+          <label for="mail-confirm">メールアドレス確認用</label>
+          <div class="required-input">必須</div>
+        </div>
+        <div class="input"><input type="text" id="mail-confirm" placeholder="メールアドレス（確認用）を入力する"></div>
+
+        <div class="submit">
+          <input type="submit" value="送信する" class="submit-button">
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>

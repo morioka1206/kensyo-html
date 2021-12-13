@@ -49,6 +49,8 @@ header .top-header {
   display: flex;
   justify-content: space-between;
   padding: 14px 180px;
+  background-color: white;
+  filter: drop-shadow(0 2px 2px #bb690680);
 }
 header .top-header .top-left {
   display: flex;
@@ -708,4 +710,148 @@ footer .footer-wrapper .footer-category::before {
   font-size: 1.4em;
   line-height: 20.27px;
   margin-top: 22px;
+}
+
+.registration-stage-headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  padding-top: 43px;
+}
+.registration-stage-headings .stage-heading,
+.registration-stage-headings .stage-complete {
+  width: 195px;
+  height: 45px;
+  padding: 11px 0 14px;
+  border: solid 1px #c4c4c4;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  text-align: center;
+  position: relative;
+}
+.registration-stage-headings .stage-heading:after,
+.registration-stage-headings .stage-heading:before {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+.registration-stage-headings .stage-heading:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 14px;
+  border-right-width: 14px;
+  margin-top: -9px;
+  border-left-color: #ffffff;
+  transform: translateX(-1.5px);
+}
+.registration-stage-headings .stage-heading:before {
+  border-color: rgba(196, 196, 196, 0);
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 14px;
+  border-right-width: 15px;
+  margin-top: -9px;
+  margin-left: 1px;
+  border-left-color: #c4c4c4;
+}
+.registration-stage-headings .active {
+  color: white;
+  background-color: #f7941c;
+  border: none;
+}
+.registration-stage-headings .active:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 14px;
+  border-right-width: 14px;
+  margin-top: -9px;
+  border-left-color: #f7941c;
+  transform: translateX(-1.5px);
+}
+.registration-stage-headings .active:before {
+  border-color: rgba(196, 196, 196, 0);
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 14px;
+  border-right-width: 15px;
+  margin-top: -9px;
+  margin-left: -1px;
+  border-left-color: #f7941c;
+}
+
+.provisional-registration-wrapper {
+  width: 68%;
+  height: 713px;
+  background-color: white;
+  margin: 105px auto 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #404041;
+}
+.provisional-registration-wrapper .provisional-registration-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 34.75px;
+  margin-top: 60px;
+}
+.provisional-registration-wrapper .provisional-registration-message {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 62px;
+}
+.provisional-registration-wrapper .provisional-resgistration-form {
+  width: 57.1%;
+}
+.provisional-registration-wrapper .provisional-resgistration-form label {
+  font-size: 1.4em;
+}
+.provisional-registration-wrapper .provisional-resgistration-form .label {
+  display: flex;
+  gap: 10px;
+}
+.provisional-registration-wrapper .provisional-resgistration-form input {
+  width: 100%;
+  height: 70px;
+  background-color: #f2f4f6;
+  margin-top: 13px;
+  margin-bottom: 24px;
+}
+.provisional-registration-wrapper .provisional-resgistration-form .required-input {
+  display: inline-block;
+  width: 46px;
+  height: 23px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 17.38px;
+  background-color: #ea432d;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.provisional-registration-wrapper .provisional-resgistration-form .submit {
+  display: flex;
+  justify-content: center;
+}
+.provisional-registration-wrapper .provisional-resgistration-form .submit-button {
+  width: 41%;
+  height: 44px;
+  border-radius: 2px;
+  color: white;
+  background-color: #ea432d;
+  cursor: pointer;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
