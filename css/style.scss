@@ -102,3 +102,99 @@ body {
 @import "../layout/index";
 @import "../layout/application-detail";
 @import "../layout/registration";
+@import "../layout/login";
+
+// 共通の設定
+
+// 登録フォーム共通の設定
+.registration-stage-headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  padding-top: 43px;
+
+  .stage-heading,
+  .stage-complete {
+    width: 195px;
+    height: 45px;
+    padding: 11px 0 14px;
+    border: solid 1px #c4c4c4;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    line-height: 20.27px;
+    text-align: center;
+    position: relative;
+  }
+
+  .stage-heading:after,
+  .stage-heading:before {
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+  }
+  .stage-heading:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 14px;
+    border-right-width: 14px;
+    margin-top: -9px;
+    border-left-color: #ffffff;
+    transform: translateX(-1.5px);
+  }
+  .stage-heading:before {
+    border-color: rgba(196, 196, 196, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 14px;
+    border-right-width: 15px;
+    margin-top: -9px;
+    margin-left: 1px;
+    border-left-color: #c4c4c4;
+  }
+
+  // 現在のステージはオレンジ色に
+  .active {
+    color: white;
+    background-color: $orange;
+    border: none;
+  }
+
+  .active:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 14px;
+    border-right-width: 14px;
+    margin-top: -9px;
+    border-left-color: $orange;
+    transform: translateX(-1.5px);
+  }
+
+  .active:before {
+    border-color: rgba(196, 196, 196, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 14px;
+    border-right-width: 15px;
+    margin-top: -9px;
+    margin-left: -1px;
+    border-left-color: $orange;
+  }
+}
+
+// 登録のタイトル
+.registration-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 34.75px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}

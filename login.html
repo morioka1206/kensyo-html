@@ -33,22 +33,12 @@
 
 <body>
   <header id="header"></header>
-  <!-- 仮登録 -->
-  <div class="registration-wrapper">
-    <div class="registration-stage-headings">
-      <div class="stage-heading active">仮登録</div>
-      <div class="stage-heading">仮登録完了</div>
-      <div class="stage-heading">本登録</div>
-      <div class="stage-complete">登録完了</div>
-    </div>
-    <div class="registration-title">仮登録フォーム</div>
-    <div class="provisional-registration-message">
-      <p>次の項目を入力して確認画面送信してください。</p>
-      <p>入力されたメールアドレスに本登録ページのURLを送付します。</p>
-    </div>
+  <!-- ログイン -->
+  <div class="login-wrapper">
+    <div class="registration-title">ログイン</div>
 
-    <!-- 仮登録フォーム -->
-    <div class="provisional-resgistration-form">
+    <!-- ログインフォーム -->
+    <div class="login-form">
       <form action="post">
         <div class="label">
           <label for="mail">メールアドレス</label>
@@ -56,15 +46,23 @@
         </div>
         <div class="input"><input type="text" id="mail" placeholder="メールアドレスを入力する"></div>
         <div class="label">
-          <label for="mail-confirm">メールアドレス確認用</label>
+          <label for="password">パスワード</label>
           <div class="required-input">必須</div>
         </div>
-        <div class="input"><input type="text" id="mail-confirm" placeholder="メールアドレス（確認用）を入力する"></div>
+        <div class="input"><input type="text" id="password" placeholder="パスワードを入力する"></div>
 
         <div class="submit">
           <input type="submit" value="送信する" class="submit-button">
         </div>
       </form>
+
+      <div class="forgot-password">
+        <a href="#">パスワードをお忘れの方はこちら</a>
+      </div>
+      <div class="not-user-link">
+        <p>会員登録がまだの場合は<a href="#">こちら</a>から登録</p>
+        </p>
+      </div>
     </div>
 
   </div>

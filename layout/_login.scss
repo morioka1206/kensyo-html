@@ -1,0 +1,110 @@
+// ログインなど
+
+.login-wrapper {
+  width: 68%;
+  background-color: white;
+  margin: 105px auto 150px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding-bottom: 80px;
+  color: $gray;
+
+  // ログインフォーム
+  .login-form {
+    width: 57.1%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    label {
+      font-size: 1.4em;
+    }
+
+    .label {
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      width: 100%;
+      height: 70px;
+      background-color: #f2f4f6;
+      margin-top: 13px;
+      margin-bottom: 24px;
+    }
+
+    .required-input {
+      display: inline-block;
+      width: 46px;
+      height: 23px;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 17.38px;
+      background-color: $red;
+      border-radius: 3px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+    }
+
+    .submit-button {
+      width: 41%;
+      height: 44px;
+      border-radius: 2px;
+      color: white;
+      background-color: $red;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+
+  .back-home-button {
+    width: 230px;
+    height: 44px;
+    color: $glay-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $line-gray2;
+    margin-top: 46px;
+  }
+
+  // ホームへ戻る
+  .back-home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  // パスワードを忘れた
+  .forgot-password {
+    font-family: $yu;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    color: $link-blue;
+    margin-top: 30px;
+  }
+
+  // まだ会員でない方はこちら
+  .not-user-link {
+    font-size: 1.2em;
+    line-height: 17.38px;
+    text-align: center;
+    margin-top: 17px;
+
+    a {
+      color: $link-blue;
+      text-decoration: underline solid $link-blue;
+    }
+  }
+}
