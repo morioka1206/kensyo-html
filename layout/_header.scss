@@ -23,6 +23,7 @@ header {
         width: 237px;
         display: flex;
         border: 1px solid $line-gray2;
+        border-radius: 2px;
       }
 
       // 入力欄
@@ -73,11 +74,12 @@ header {
     .logout-button::after {
       content: "";
       display: inline-block;
-      width: 33px;
-      height: 33px;
+      width: 13.9px;
+      height: 20px;
       background-image: url(../images/logout-icon.svg);
       background-size: contain;
-      vertical-align: middle;
+      margin-left: 5px;
+      transform: translateY(10%);
     }
   }
 

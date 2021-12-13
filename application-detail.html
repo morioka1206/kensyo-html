@@ -1,0 +1,126 @@
+<!-- 応募詳細ページ -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- webフォント -->
+  <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 同じ部分が多いのでJQueryでファイルを分割したものを読み込み -->
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("./page-parts/_header.html");
+      $("#footer").load("./page-parts/_footer.html");
+      $("#prize-list").load("./page-parts/_prize-list.html");
+      $("#notification").load("./page-parts/_notification.html");
+      $("#prize-navi").load("./page-parts/_prize-navi.html");
+
+
+    });
+  </script>
+  <title>官公庁　懸賞課</title>
+  </title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="prize-wrapper">
+    <div class="prize-wrapper-left">
+
+      <!-- 応募の詳細 -->
+      <div class="application-detail-wrapper">
+
+        <div class="each-prize-detail">
+          <div class="prize-thumbnail-image"><img src="./images/ダミー商品2.png" alt=""></div>
+          <div class="prize-list-information">
+            <div class="prize-list-information-top">
+              <div class="prize-list-area">エリア</div>
+              <div class="prize-list-number-winners">当選人数：000名様</div>
+            </div>
+            <!-- 懸賞のタイトル -->
+            <div class="prize-product-title">
+              懸賞タイトルが入ります。懸賞タイトルが入ります。懸賞タイトルが入ります(36文字)
+            </div>
+
+            <!-- 懸賞の締め切り日 -->
+            <div class="application-detail-end-date">
+              <div class="application-detail-information-name">終了日</div>
+              <div class="application-detail-information">YYYY/MM/DDまで</div>
+            </div>
+            <!-- 当選人数 -->
+            <div class="application-detail-number-winners">
+              <div class="application-detail-information-name">当選人数</div>
+              <div class="application-detail-information">◯◯◯名</div>
+            </div>
+            <!-- 懸賞提供企業情報 -->
+            <div class="application-detail-provide-enterprise">
+              <div class="application-detail-information-name">懸賞提供企業情報</div>
+              <div class="application-detail-information">◯◯株式会社</div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- いますぐ応募ボタン -->
+        <div class="now-application-button">
+          <p>今すぐ応募する！</p>
+        </div>
+
+        <!-- 応募概要 -->
+        <div class="application-detail-title">応募概要</div>
+
+        <!-- 応募情報 -->
+        <div class="application-detail-contents">
+          <p>懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。</p>
+          <br>
+          <ul>
+            <li>【条件見出し】</li>
+            <li>・条件などが入ります</li>
+            <li>・条件などが入ります</li>
+            <li>・条件などが入ります</li>
+          </ul>
+          <br>
+          <ul>
+            <li>【条件見出し】</li>
+            <li>・条件などが入ります</li>
+            <li>・条件などが入ります</li>
+            <li>・条件などが入ります</li>
+          </ul>
+          <br>
+          <p style="color: #EA432D;">※注意事項が入ります。この文章はダミーです。注意事項が入ります。この文章はダミーです。</p>
+          <p style="color: #EA432D;">※注意事項が入ります。この文章はダミーです。注意事項が入ります。この文章はダミーです。</p>
+          <br>
+          <p>
+            懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。懸賞の情報が入ります。この文章はダミーです。
+          </p>
+        </div>
+      </div>
+
+      <!-- お知らせ -->
+      <div id="notification"></div>
+
+    </div>
+
+    <!-- ナビゲーション -->
+    <div id="prize-navi"></div>
+  </div>
+
+
+
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>

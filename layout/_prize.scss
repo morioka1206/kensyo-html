@@ -1,12 +1,12 @@
 .prize-list-wrapper {
-  width: 45%;
-  height: 1294px;
+  // height: 1294px;
+  min-width: 430px;
   border-radius: 2px;
   background-color: $back-orange;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin: 0 auto;
+  padding-bottom: 30px;
 
   .prize-contents {
     width: calc(100% - 60px);
@@ -18,86 +18,90 @@
     gap: 12px;
     padding-top: 20px;
 
+    // それぞれの懸賞情報
     .each-prize {
-      width: 100%;
-      height: 182px;
+      min-width: 410px;
       background-color: white;
       z-index: 1;
       filter: drop-shadow(0 0 4px #00000040);
       border-radius: 2px;
-      position: relative;
       display: flex;
       gap: 10px;
       padding: 10px;
 
-      .prize-list-information-top {
-        display: flex;
-        gap: 12px;
-      }
+      // 懸賞の右の情報部分
+      .prize-list-information {
+        position: relative;
 
-      // エリア
-      .prize-list-area {
-        width: 76px;
-        height: 17px;
-        border-radius: 2px;
-        background-color: white;
-        color: $orange;
-        font-size: 1.2em;
-        line-height: 10px;
-        border: 1px solid $orange;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        // 懸賞の情報の上の部分（タグ・当選人数）
+        .prize-list-information-top {
+          display: flex;
+          gap: 12px;
+        }
 
-      // 当選人数
-      .prize-list-number-winners {
-        width: 127px;
-        height: 17px;
-        border-radius: 2px;
-        background-color: $orange;
-        color: white;
-        font-size: 1.2em;
-        line-height: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        // エリア
+        .prize-list-area {
+          width: 76px;
+          height: 17px;
+          border-radius: 2px;
+          background-color: white;
+          color: $orange;
+          font-size: 1.2em;
+          line-height: 10px;
+          border: 1px solid $orange;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-      // 懸賞のタイトル
-      .prize-product-title {
-        font-size: 1.6em;
-        font-weight: bold;
-        line-height: 23.17px;
-        text-align: justify;
-        margin-top: 10px;
-        color: $gray;
-      }
+        // 当選人数
+        .prize-list-number-winners {
+          width: 127px;
+          height: 17px;
+          border-radius: 2px;
+          background-color: $orange;
+          color: white;
+          font-size: 1.2em;
+          line-height: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-      // 懸賞の締切日
-      .prize-list-end-date {
-        font-size: 1.4em;
-        font-weight: bold;
-        line-height: 20.27px;
-        color: $orange;
-        margin-top: 10px;
-      }
-      // 詳細を見るボタン
-      .prize-list-details-button {
-        width: 198px;
-        height: 39px;
-        background-color: $red;
-        border-radius: 2px;
-        color: white;
-        font-weight: bold;
-        font-size: 1.4em;
-        line-height: 20.27px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
+        // 懸賞のタイトル
+        .prize-product-title {
+          font-size: 1.6em;
+          font-weight: bold;
+          line-height: 23.17px;
+          text-align: justify;
+          margin-top: 10px;
+          color: $gray;
+        }
+
+        // 懸賞の締切日
+        .prize-list-end-date {
+          font-size: 1.4em;
+          font-weight: bold;
+          line-height: 20.27px;
+          color: $orange;
+          margin-top: 10px;
+        }
+        // 詳細を見るボタン
+        .prize-list-details-button {
+          width: 50%;
+          height: 39px;
+          background-color: $red;
+          border-radius: 2px;
+          color: white;
+          font-weight: bold;
+          font-size: 1.4em;
+          line-height: 20.27px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 19px;
+          margin-left: 50%;
+        }
       }
     }
   }

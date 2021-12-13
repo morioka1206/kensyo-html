@@ -1,0 +1,142 @@
+.application-detail-wrapper {
+  background-color: white;
+  height: 955px;
+  padding: 30px;
+
+  .each-prize-detail {
+    min-width: 410px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 2px;
+    display: flex;
+    gap: 10px;
+
+    // 懸賞の右の情報部分
+    .prize-list-information {
+      position: relative;
+
+      // 懸賞の情報の上の部分（タグ・当選人数）
+      .prize-list-information-top {
+        display: flex;
+        gap: 12px;
+      }
+
+      // エリア
+      .prize-list-area {
+        width: 76px;
+        height: 17px;
+        border-radius: 2px;
+        background-color: white;
+        color: $orange;
+        font-size: 1.2em;
+        line-height: 10px;
+        border: 1px solid $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // 当選人数
+      .prize-list-number-winners {
+        width: 127px;
+        height: 17px;
+        border-radius: 2px;
+        background-color: $orange;
+        color: white;
+        font-size: 1.2em;
+        line-height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // 懸賞のタイトル
+      .prize-product-title {
+        font-size: 2.2em;
+        font-weight: bold;
+        line-height: 31.86px;
+        text-align: justify;
+        margin-top: 10px;
+        color: $gray;
+        margin-bottom: 15.77px;
+      }
+
+      // 締切日・当選人数・提供企業
+      .application-detail-end-date,
+      .application-detail-number-winners,
+      .application-detail-provide-enterprise {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px dotted #b5b5b5;
+      }
+
+      .application-detail-information-name {
+        width: 112px;
+        font-size: 1.4em;
+        font-weight: bold;
+        line-height: 20.27px;
+        color: $orange;
+      }
+
+      .application-detail-information {
+        font-size: 1.2em;
+        line-height: 17.38px;
+      }
+    }
+  }
+
+  // 今すぐ応募ボタン
+  .now-application-button {
+    width: calc(100% - 60px);
+    height: 70px;
+    background-color: $red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 2.7em;
+    font-weight: bold;
+    line-height: 39.1px;
+
+    // 影をつける
+    filter: drop-shadow(0 3px 0 #a62311);
+
+    margin-top: 44px;
+    margin-bottom: 30px;
+
+    // お申し込みアイコン
+    p:before {
+      content: "";
+      display: inline-block;
+      background-image: url(../images/申込みicon.svg);
+      background-size: cover;
+      width: 47.47px;
+      height: 42.57px;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+  }
+
+  // 応募概要タイトル
+  .application-detail-title {
+    height: 35px;
+    color: $gray;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 26.06px;
+    text-align: justify;
+    border-top: 3px solid $orange;
+    border-bottom: 1px solid $orange;
+  }
+
+  // 応募概要
+  .application-detail-contents {
+    color: $gray;
+    font-size: 1.4em;
+    line-height: 20.27px;
+    margin-top: 22px;
+  }
+}
