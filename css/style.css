@@ -1106,6 +1106,20 @@ footer .footer-wrapper .footer-category::before {
   cursor: pointer;
   margin: 0 auto;
 }
+.login-wrapper .password-mail-complete-message {
+  width: 57.1%;
+  font-size: 1.6em;
+  line-height: 23.17px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.login-wrapper .spam-mail-caution {
+  width: 57.1%;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 .login-wrapper .back-home-button {
   width: 230px;
   height: 44px;
@@ -1114,13 +1128,8 @@ footer .footer-wrapper .footer-category::before {
   align-items: center;
   justify-content: center;
   border: 1px solid #d1d1d1;
-  margin-top: 46px;
-}
-.login-wrapper .back-home-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  margin-top: 46px;
 }
 .login-wrapper .forgot-password {
   font-family: "YuGothic";
@@ -1141,6 +1150,53 @@ footer .footer-wrapper .footer-category::before {
   color: #00a3ff;
   -webkit-text-decoration: underline solid #00a3ff;
           text-decoration: underline solid #00a3ff;
+}
+.login-wrapper .password-reissue-message {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  text-align: center;
+  margin-top: 30px;
+}
+.login-wrapper .main-registration-complete-login {
+  width: 60%;
+  height: 70px;
+  background-color: #ea432d;
+  color: white;
+  font-size: 2.7em;
+  font-weight: bold;
+  line-height: 39.1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 32px;
+}
+
+.rules-wrapper {
+  width: 68%;
+  margin: 0 auto;
+  padding-top: 104px;
+  padding-bottom: 150px;
+}
+.rules-wrapper .rules-title {
+  font-size: 4em;
+  line-height: 40px;
+  text-align: center;
+}
+.rules-wrapper .prerequisite-text {
+  font-size: 1.6em;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.rules-wrapper .rules-content {
+  background-color: white;
+  font-size: 1.4em;
+  line-height: 32px;
+  padding: 98px 30px 34px;
+  margin-top: 54px;
 }
 
 .registration-stage-headings {
