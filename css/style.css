@@ -35,6 +35,18 @@ li {
   list-style: none;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  /* デフォルトのスタイルを無効 */
+  padding-left: 15px;
+  /* 文字が左に寄るので右にずらす */
+  background-image: url(../images/kensyo-select-arrow.svg);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -794,6 +806,8 @@ footer .footer-wrapper .footer-category::before {
   font-weight: bold;
   line-height: 34.75px;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .registration-wrapper {
@@ -802,7 +816,6 @@ footer .footer-wrapper .footer-category::before {
   margin: 105px auto 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 80px;
   color: #404041;
 }
@@ -878,4 +891,140 @@ footer .footer-wrapper .footer-category::before {
   justify-content: center;
   border: 1px solid #d1d1d1;
   margin-top: 46px;
+}
+.registration-wrapper .main-registration-message {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  text-align: center;
+  margin-top: 30px;
+}
+.registration-wrapper .main-registration-form {
+  margin-top: 80px;
+  margin-left: 107px;
+  margin-right: 96px;
+}
+.registration-wrapper .main-registration-form .registration-input-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.registration-wrapper .main-registration-form .registration-input-field .required-input {
+  width: 46px;
+  height: 23px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 17.38px;
+  background-color: #ea432d;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(13%);
+}
+.registration-wrapper .main-registration-form .registration-input-field .input-name {
+  width: 125px;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 28px;
+  margin-left: 17px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.registration-wrapper .main-registration-form .registration-input-field input {
+  width: 72%;
+  height: 40px;
+  background-color: #f2f4f6;
+  border-radius: 2px;
+}
+.registration-wrapper .main-registration-form .registration-user-mail {
+  font-size: 1.4em;
+  line-height: 28px;
+  color: #555555;
+}
+.registration-wrapper .work-space {
+  position: relative;
+  width: 72%;
+}
+.registration-wrapper .work-space input {
+  width: 100% !important;
+}
+.registration-wrapper .work-space-message {
+  line-height: 28px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.registration-wrapper .postal-code-input {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.registration-wrapper .postal-code-input .address-search {
+  width: 82px;
+  height: 30px;
+  background-color: #b5b5b5;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 28px;
+  filter: drop-shadow(0 2px 0 #555555);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-wrapper .birthday-select select {
+  height: 40px;
+  background-color: #f2f4f6;
+  border-radius: 2px;
+}
+.registration-wrapper .year {
+  width: 85px;
+}
+.registration-wrapper .monthday {
+  width: 67px;
+}
+.registration-wrapper .privacy-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "YuGothic";
+  font-size: 1.6em;
+  line-height: 23px;
+  margin-top: 40px;
+}
+.registration-wrapper .privacy-policy input[type=checkbox] {
+  transform: scale(1.68);
+  margin-right: 10px;
+}
+.registration-wrapper .privacy-policy a {
+  color: #00a3ff;
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-text-decoration: underline solid #00a3ff;
+          text-decoration: underline solid #00a3ff;
+}
+.registration-wrapper .privacy-policy .privacy-check {
+  margin-top: 25px;
+  line-height: 24px;
+}
+.registration-wrapper .privacy-protection-message {
+  font-size: 1.2em;
+  line-height: 17.38px;
+  text-align: center;
+  margin-top: 24px;
+}
+.registration-wrapper .register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 44px;
+  background-color: #ea432d;
+  color: white;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

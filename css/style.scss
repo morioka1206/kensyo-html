@@ -31,7 +31,9 @@ $noto: "Noto Sans JP", sans-serif;
 // Roboto
 $roboto: "Roboto", sans-serif;
 
-// 基本のセット
+// Yu Gothic
+$yu: "YuGothic"; // 基本のセット
+
 html {
   scroll-behavior: smooth;
   // 基本の文字の色はグレー
@@ -68,6 +70,15 @@ ul {
 
 li {
   list-style: none;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none; /* デフォルトのスタイルを無効 */
+  padding-left: 15px; /* 文字が左に寄るので右にずらす */
+  background-image: url(../images/kensyo-select-arrow.svg);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
 }
 
 // スタイルの基本セット
