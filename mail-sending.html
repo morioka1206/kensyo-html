@@ -1,4 +1,4 @@
-<!-- ユーザー仮登録ページ -->
+<!-- ユーザー仮登録メール送信完了ページ -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -33,39 +33,33 @@
 
 <body>
   <header id="header"></header>
-  <!-- 仮登録 -->
+  <!-- 仮登録完了 -->
   <div class="registration-wrapper">
     <div class="registration-stage-headings">
-      <div class="stage-heading active">仮登録</div>
-      <div class="stage-heading">仮登録完了</div>
+      <div class="stage-heading">仮登録</div>
+      <div class="stage-heading active">仮登録完了</div>
       <div class="stage-heading">本登録</div>
       <div class="stage-complete">登録完了</div>
     </div>
-    <div class="provisional-registration-title">仮登録フォーム</div>
-    <div class="provisional-registration-message">
-      <p>次の項目を入力して確認画面送信してください。</p>
-      <p>入力されたメールアドレスに本登録ページのURLを送付します。</p>
+    <div class="registration-title">仮登録が完了しました。</div>
+    <div class="provisional-registration-complete-message">
+      <p>仮登録後の流れの説明が入ります。</p>
+      <p>
+        仮登録後の流れの説明が入ります。仮登録後の流れの説明が入ります。仮登録後の流れの説明が入ります。
+        仮登録後の流れの説明が入ります。仮登録後の流れの説明が入ります。仮登録後の流れの説明が入ります。</p>
+    </div>
+    <div class="spam-mail-caution">
+      <p>迷惑メールの案内文が入ります</p>
+      <p>
+        info@matsumi-kankocho.comからのメールをご確認ください。
+        迷惑メールやプロモーションなどで受信する場合がございますので、ご確認時には各種メールフォルダを探してください。
+        info@matsumi-kankocho.comからのメールをご確認ください。迷惑メールやプロモーションなどで受信する場合がございますので、
+        ご確認時には各種メールフォルダを探してください。
+      </p>
     </div>
 
-    <!-- 仮登録フォーム -->
-    <div class="provisional-resgistration-form">
-      <form action="post">
-        <div class="label">
-          <label for="mail">メールアドレス</label>
-          <div class="required-input">必須</div>
-        </div>
-        <div class="input"><input type="text" id="mail" placeholder="メールアドレスを入力する"></div>
-        <div class="label">
-          <label for="mail-confirm">メールアドレス確認用</label>
-          <div class="required-input">必須</div>
-        </div>
-        <div class="input"><input type="text" id="mail-confirm" placeholder="メールアドレス（確認用）を入力する"></div>
+    <div class="back-home-button">ホームに戻る</div>
 
-        <div class="submit">
-          <input type="submit" value="送信する" class="submit-button">
-        </div>
-      </form>
-    </div>
 
   </div>
   <footer id="footer"></footer>

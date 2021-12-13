@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 html {
   scroll-behavior: smooth;
+  color: #404041;
 }
 
 a {
@@ -788,47 +789,48 @@ footer .footer-wrapper .footer-category::before {
   border-left-color: #f7941c;
 }
 
-.provisional-registration-wrapper {
-  width: 68%;
-  height: 713px;
-  background-color: white;
-  margin: 105px auto 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #404041;
-}
-.provisional-registration-wrapper .provisional-registration-title {
+.registration-title {
   font-size: 2.4em;
   font-weight: bold;
   line-height: 34.75px;
   margin-top: 60px;
 }
-.provisional-registration-wrapper .provisional-registration-message {
+
+.registration-wrapper {
+  width: 68%;
+  background-color: white;
+  margin: 105px auto 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  color: #404041;
+}
+.registration-wrapper .provisional-registration-message {
   font-size: 1.4em;
   line-height: 20.27px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 62px;
 }
-.provisional-registration-wrapper .provisional-resgistration-form {
+.registration-wrapper .provisional-resgistration-form {
   width: 57.1%;
 }
-.provisional-registration-wrapper .provisional-resgistration-form label {
+.registration-wrapper .provisional-resgistration-form label {
   font-size: 1.4em;
 }
-.provisional-registration-wrapper .provisional-resgistration-form .label {
+.registration-wrapper .provisional-resgistration-form .label {
   display: flex;
   gap: 10px;
 }
-.provisional-registration-wrapper .provisional-resgistration-form input {
+.registration-wrapper .provisional-resgistration-form input {
   width: 100%;
   height: 70px;
   background-color: #f2f4f6;
   margin-top: 13px;
   margin-bottom: 24px;
 }
-.provisional-registration-wrapper .provisional-resgistration-form .required-input {
+.registration-wrapper .provisional-resgistration-form .required-input {
   display: inline-block;
   width: 46px;
   height: 23px;
@@ -842,11 +844,11 @@ footer .footer-wrapper .footer-category::before {
   justify-content: center;
   align-items: center;
 }
-.provisional-registration-wrapper .provisional-resgistration-form .submit {
+.registration-wrapper .provisional-resgistration-form .submit {
   display: flex;
   justify-content: center;
 }
-.provisional-registration-wrapper .provisional-resgistration-form .submit-button {
+.registration-wrapper .provisional-resgistration-form .submit-button {
   width: 41%;
   height: 44px;
   border-radius: 2px;
@@ -854,4 +856,26 @@ footer .footer-wrapper .footer-category::before {
   background-color: #ea432d;
   cursor: pointer;
   margin: 0 auto;
+}
+.registration-wrapper .provisional-registration-complete-message {
+  width: 57.1%;
+  font-size: 1.6em;
+  line-height: 23.17px;
+  margin-top: 30px;
+}
+.registration-wrapper .spam-mail-caution {
+  width: 57.1%;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  margin-top: 30px;
+}
+.registration-wrapper .back-home-button {
+  width: 230px;
+  height: 44px;
+  color: #b5b5b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d1d1;
+  margin-top: 46px;
 }/*# sourceMappingURL=style.css.map */

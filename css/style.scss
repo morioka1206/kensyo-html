@@ -34,6 +34,8 @@ $roboto: "Roboto", sans-serif;
 // 基本のセット
 html {
   scroll-behavior: smooth;
+  // 基本の文字の色はグレー
+  color: $gray;
 }
 
 // リンクの下線と青色をなしに
