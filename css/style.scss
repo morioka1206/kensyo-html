@@ -202,3 +202,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
+// ホームへ戻る
+.back-home-button {
+  width: 230px;
+  height: 44px;
+  color: $glay-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $line-gray2;
+  margin: 0 auto;
+  margin-top: 46px;
+}

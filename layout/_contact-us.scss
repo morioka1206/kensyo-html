@@ -1,3 +1,13 @@
+// お問い合わせのステージ
+.inquiry-heading {
+  gap: 35px !important;
+}
+
+.inquiry-stage {
+  // width: 26% !important;
+  width: 263px !important;
+}
+
 .contact-us-wrapper {
   width: 68%;
   background-color: white;
@@ -198,5 +208,11 @@
     width: 72%;
     font-size: 1.6em;
     line-height: 20.27px;
+  }
+
+  // ホームへ戻るボタン
+  .back-home-button {
+    margin-top: 62px;
+    margin-bottom: 60px;
   }
 }

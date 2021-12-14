@@ -1200,6 +1200,14 @@ footer .footer-wrapper .footer-category::before {
   margin-top: 54px;
 }
 
+.inquiry-heading {
+  gap: 35px !important;
+}
+
+.inquiry-stage {
+  width: 263px !important;
+}
+
 .contact-us-wrapper {
   width: 68%;
   background-color: white;
@@ -1373,6 +1381,10 @@ footer .footer-wrapper .footer-category::before {
   font-size: 1.6em;
   line-height: 20.27px;
 }
+.contact-us-wrapper .back-home-button {
+  margin-top: 62px;
+  margin-bottom: 60px;
+}
 
 .registration-stage-headings {
   display: flex;
@@ -1458,4 +1470,16 @@ footer .footer-wrapper .footer-category::before {
   margin-top: 60px;
   display: flex;
   justify-content: center;
+}
+
+.back-home-button {
+  width: 230px;
+  height: 44px;
+  color: #b5b5b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d1d1;
+  margin: 0 auto;
+  margin-top: 46px;
 }/*# sourceMappingURL=style.css.map */
