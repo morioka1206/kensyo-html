@@ -1,0 +1,49 @@
+<!-- トップページ -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- webフォント -->
+  <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 同じ部分が多いのでJQueryでファイルを分割したものを読み込み -->
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("./page-parts/_header.html");
+      $("#footer").load("./page-parts/_footer.html");
+      $("#prize-list").load("./page-parts/_prize-list.html");
+      $("#notification").load("./page-parts/_notification.html");
+      $("#prize-navi").load("./page-parts/_prize-navi.html");
+
+
+    });
+  </script>
+  <title>官公庁　懸賞課</title>
+  </title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="prize-wrapper">
+    <div class="prize-wrapper-left">
+      <div class="index-page-title recommend-title">当サイトについて</div>
+      <!-- サイトの説明 -->
+      <div class="about-site-wrapper">
+
+      </div>
+    </div>
+    <div id="prize-navi"></div>
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>

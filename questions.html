@@ -1,0 +1,344 @@
+<!-- トップページ -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- webフォント -->
+  <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 同じ部分が多いのでJQueryでファイルを分割したものを読み込み -->
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("./page-parts/_header.html");
+      $("#footer").load("./page-parts/_footer.html");
+      $("#prize-list").load("./page-parts/_prize-list.html");
+      $("#notification").load("./page-parts/_notification.html");
+      $("#prize-navi").load("./page-parts/_prize-navi.html");
+
+
+    });
+  </script>
+  <title>官公庁　懸賞課</title>
+  </title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="prize-wrapper">
+    <div class="prize-wrapper-left">
+      <div class="index-page-title recommend-title">よくある質問</div>
+      <!-- よくある質問 -->
+      <div class="questions-wrapper ">
+        <dl class="accordion js-accordion">
+          <!-- <div class="accordion__item js-accordion-trigger">
+            <dt class="accordion__title">DEMO3のタイトル</dt>
+            <dd class="accordion__content">DEMO3のコンテンツ</dd>
+          </div>
+          <div class="accordion__item js-accordion-trigger">
+            <dt class="accordion__title">DEMO3のタイトル</dt>
+            <dd class="accordion__content">DEMO3のコンテンツ</dd>
+          </div>
+          <div class="accordion__item js-accordion-trigger">
+            <dt class="accordion__title">DEMO3のタイトル</dt>
+            <dd class="accordion__content">DEMO3のコンテンツ</dd>
+          </div> -->
+
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+          <!-- それぞれの質問と回答 -->
+          <div class="accordion__item js-accordion-trigger">
+            <div class="">
+              <dt class="accordion__title question-content">
+                <img src="./images/kensyo-Q.svg" alt="">
+                <p class="question">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+                <img src="./images/kensyo-+.svg" alt="">
+              </dt>
+            </div>
+            <dd class="accordion__content">
+              <div class="answer">
+                <img src="./images/kensyo-A.svg" alt="">
+                <p class="answer-text">よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。よくある質問が入ります。この文章はダミーです。
+                </p>
+              </div>
+            </dd>
+          </div>
+
+
+
+        </dl>
+
+
+      </div>
+    </div>
+    <div id="prize-navi"></div>
+  </div>
+  <footer id="footer"></footer>
+
+  <script>
+    /* =================================================== */
+    // slideUp, slideDown, slideToggle関数を定義
+    /* =================================================== */
+
+    // 要素をスライドしながら非表示にする関数(jQueryのslideUpと同じ)
+    const slideUp = (el, duration = 300) => {
+      el.style.height = el.offsetHeight + "px";
+      el.offsetHeight;
+      el.style.transitionProperty = "height, margin, padding";
+      el.style.transitionDuration = duration + "ms";
+      el.style.transitionTimingFunction = "ease";
+      el.style.overflow = "hidden";
+      el.style.height = 0;
+      el.style.paddingTop = 0;
+      el.style.paddingBottom = 0;
+      el.style.marginTop = 0;
+      el.style.marginBottom = 0;
+      setTimeout(() => {
+        el.style.display = "none";
+        el.style.removeProperty("height");
+        el.style.removeProperty("padding-top");
+        el.style.removeProperty("padding-bottom");
+        el.style.removeProperty("margin-top");
+        el.style.removeProperty("margin-bottom");
+        el.style.removeProperty("overflow");
+        el.style.removeProperty("transition-duration");
+        el.style.removeProperty("transition-property");
+        el.style.removeProperty("transition-timing-function");
+        el.classList.remove("is-open");
+      }, duration);
+    };
+
+    // 要素をスライドしながら表示する関数(jQueryのslideDownと同じ)
+    const slideDown = (el, duration = 300) => {
+      el.classList.add("is-open");
+      el.style.removeProperty("display");
+      let display = window.getComputedStyle(el).display;
+      if (display === "none") {
+        display = "block";
+      }
+      el.style.display = display;
+      let height = el.offsetHeight;
+      el.style.overflow = "hidden";
+      el.style.height = 0;
+      el.style.paddingTop = 0;
+      el.style.paddingBottom = 0;
+      el.style.marginTop = 0;
+      el.style.marginBottom = 0;
+      el.offsetHeight;
+      el.style.transitionProperty = "height, margin, padding";
+      el.style.transitionDuration = duration + "ms";
+      el.style.transitionTimingFunction = "ease";
+      el.style.height = height + "px";
+      el.style.removeProperty("padding-top");
+      el.style.removeProperty("padding-bottom");
+      el.style.removeProperty("margin-top");
+      el.style.removeProperty("margin-bottom");
+      setTimeout(() => {
+        el.style.removeProperty("height");
+        el.style.removeProperty("overflow");
+        el.style.removeProperty("transition-duration");
+        el.style.removeProperty("transition-property");
+        el.style.removeProperty("transition-timing-function");
+      }, duration);
+    };
+
+    // 要素をスライドしながら交互に表示/非表示にする関数(jQueryのslideToggleと同じ)
+    const slideToggle = (el, duration = 300) => {
+      if (window.getComputedStyle(el).display === "none") {
+        return slideDown(el, duration);
+      } else {
+        return slideUp(el, duration);
+      }
+    };
+
+    /* =================================================== */
+    // DOM操作
+    /* =================================================== */
+
+    // アコーディオンを全て取得
+    const accordions = document.querySelectorAll(".js-accordion");
+    // 取得したアコーディオンをArrayに変換(IE対策)
+    const accordionsArr = Array.prototype.slice.call(accordions);
+
+    accordionsArr.forEach((accordion) => {
+      // Triggerを全て取得
+      const accordionTriggers = accordion.querySelectorAll(".js-accordion-trigger");
+      // TriggerをArrayに変換(IE対策)
+      const accordionTriggersArr = Array.prototype.slice.call(accordionTriggers);
+
+      accordionTriggersArr.forEach((trigger) => {
+        // Triggerにクリックイベントを付与
+        trigger.addEventListener("click", () => {
+          // '.is-active'クラスを付与or削除
+          trigger.classList.toggle("is-active");
+          // 開閉させる要素を取得
+          const content = trigger.querySelector(".accordion__content");
+          // 要素を展開or閉じる
+          slideToggle(content);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
