@@ -1,0 +1,114 @@
+// マイページの木
+
+.my-page-navi {
+  width: 300px;
+  height: 300px;
+  z-index: 200;
+
+  // / マイページのタイトル
+  .my-page-title {
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 34.75px;
+    background-color: white;
+    border-radius: 2px;
+    border-top: 6px solid $orange;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    border-bottom: 3px solid $orange;
+  }
+
+  .my-page-navi-contents {
+    background-color: $back-orange;
+    border-radius: 2px;
+    padding: 9px 12px 13px;
+
+    .link-to-user-information {
+      height: 45px;
+      background-color: white;
+      border-radius: 2px;
+      filter: drop-shadow(0 0 6px #bb6906);
+      font-size: 1.6em;
+      font-weight: bold;
+      line-height: 23.17px;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+    }
+
+    .link-to-user-information::before {
+      content: url(../images/pen.svg);
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .tree-wrapper {
+      background-color: white;
+      border-radius: 2px;
+      filter: drop-shadow(0 0 6px #bb6906);
+      padding: 23px 23px 30px;
+      margin-top: 9px;
+
+      .tree-message {
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 23.17px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      // ユーザーのポイント
+      .tree-user-point {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 10px;
+        // 累計
+        .total {
+          font-size: 1.6em;
+          font-weight: bold;
+          line-height: 23.17px;
+          text-align: center;
+        }
+
+        // ポイント
+        .user-point {
+          font-size: 3.2em;
+          font-weight: bold;
+          line-height: 46.34px;
+          text-align: center;
+        }
+      }
+
+      .tree-next-level-point {
+        width: 236px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $orange;
+        margin: 0 auto;
+        margin-top: 11px;
+
+        // 次のレベルまで
+        .next-level {
+          font-size: 1.6em;
+          font-weight: bold;
+          line-height: 23.17px;
+          text-align: center;
+        }
+
+        .next-level-point {
+          font-size: 3.2em;
+          font-weight: bold;
+          line-height: 46.34px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
