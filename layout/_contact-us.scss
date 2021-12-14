@@ -1,0 +1,141 @@
+.contact-us-wrapper {
+  width: 68%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 105px;
+  margin-bottom: 157px;
+  padding-bottom: 80px;
+
+  .contact-us-message {
+    font-size: 1.4em;
+    line-height: 20.27px;
+    text-align: center;
+  }
+
+  // お問い合わせフォーム
+  .contact-us-form {
+    margin-top: 80px;
+    margin-left: 107px;
+    margin-right: 96px;
+
+    // フォーム入力欄
+    .registration-input-field {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px;
+
+      // 必須
+      .required-input {
+        width: 46px;
+        height: 23px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 17.38px;
+        background-color: $red;
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(13%);
+      }
+
+      // 必須でない
+      .required-input-none {
+        width: 46px;
+        height: 23px;
+        background-color: transparent;
+      }
+
+      .input-name {
+        width: 157px;
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 28px;
+        margin-left: 17px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input {
+        width: 72%;
+        height: 40px;
+        background-color: #f2f4f6;
+        border-radius: 2px;
+      }
+    }
+
+    .registration-user-mail {
+      font-size: 1.4em;
+      line-height: 28px;
+      color: $black;
+    }
+
+    textarea {
+      width: 72%;
+      height: 160px;
+    }
+
+    select {
+      width: 224px;
+      height: 40px;
+      -webkit-appearance: none;
+      // ここのセレクトは黒塗りの矢印なので変更
+      appearance: none; /* デフォルトのスタイルを無効 */
+      padding-left: 15px; /* 文字が左に寄るので右にずらす */
+      background-image: url(../images/contact-arrow.svg);
+      background-position: right 15px center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // プライバシーポリシー
+  .privacy-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $yu;
+    font-size: 1.6em;
+    line-height: 23px;
+    margin-top: 40px;
+
+    input[type="checkbox"] {
+      transform: scale(1.68);
+      margin-right: 10px;
+    }
+    a {
+      color: $link-blue;
+      font-family: $noto;
+      text-decoration: underline solid $link-blue;
+    }
+
+    .privacy-check {
+      margin-top: 25px;
+      line-height: 24px;
+    }
+  }
+
+  // 個人情報保護
+  .privacy-protection-message {
+    font-size: 1.2em;
+    line-height: 17.38px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .register-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 44px;
+    background-color: $red;
+    color: white;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}

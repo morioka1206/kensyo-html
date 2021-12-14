@@ -1,0 +1,136 @@
+<!-- お問い合わせ -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- webフォント -->
+  <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 同じ部分が多いのでJQueryでファイルを分割したものを読み込み -->
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("./page-parts/_header.html");
+      $("#footer").load("./page-parts/_footer.html");
+      $("#prize-list").load("./page-parts/_prize-list.html");
+      $("#notification").load("./page-parts/_notification.html");
+      $("#prize-navi").load("./page-parts/_prize-navi.html");
+
+
+    });
+  </script>
+  <title>官公庁　懸賞課</title>
+  </title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="contact-us-wrapper">
+    <div class="registration-stage-headings">
+      <div class="stage-heading active">お問い合わせ内容入力</div>
+      <div class="stage-heading">確認</div>
+      <div class="stage-complete">お問い合わせ完了</div>
+    </div>
+    <div class="registration-title">お問い合わせフォーム</div>
+    <div class="contact-us-message">
+      <p>次の項目を入力して確認画面へお進みください。</p>
+    </div>
+
+    <!-- お問い合わせフォーム -->
+    <div class="contact-us-form">
+      <form action="post">
+        <!-- お名前 -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">お名前</div>
+          <input type="text" required>
+        </div>
+
+        <!-- 電話番号 -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">電話番号</div>
+          <input type="tel" required>
+        </div>
+
+        <!-- 会社名 -->
+        <div class="registration-input-field">
+          <div class="required-input-none"></div>
+          <div class="input-name">会社名</div>
+          <input type="text">
+        </div>
+
+        <!-- メールアドレス -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">メールアドレス</div>
+          <input type="email" required>
+        </div>
+
+        <!-- メールアドレス確認 -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">メールアドレス(確認)</div>
+          <input type="email" required>
+        </div>
+
+        <!-- 問い合わせ種別 -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">問い合わせ種別</div>
+          <select name="お問い合わせ種別" id="" required class="inquiry-type">
+            <option value="">選択してください</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+        </div>
+
+        <!-- お問い合わせ内容 -->
+        <div class="registration-input-field">
+          <div class="required-input">必須</div>
+          <div class="input-name">お問い合わせ内容</div>
+          <textarea name="お問い合わせ内容" id="" cols="30"></textarea>
+        </div>
+    </div>
+
+
+    <!-- プライバシーポリシー -->
+    <div class="privacy-policy">
+      <p><a href="#">プライバシーポリシー</a>をご確認の上、送信してください。</p>
+      <div class="privacy-check"><input type="checkbox"><span>プライバシーポリシーに同意する</span></div>
+    </div>
+
+    <!-- 個人情報保護 -->
+    <div class="privacy-protection-message">
+      <p>※ご記入いただいた個人情報は、お問い合わせ対応以外の用途には使用いたしません。</p>
+      <p>また、当社のプライバシーポリシーに基づき、適切に保護します。</p>
+    </div>
+
+    <input type="submit" value="登録する" class="register-button">
+
+
+
+
+    </form>
+
+  </div>
+
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>

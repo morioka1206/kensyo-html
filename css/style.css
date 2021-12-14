@@ -20,6 +20,7 @@ textarea {
   border: none;
   padding-left: 10px;
   outline: none;
+  background-color: #f2f4f6;
 }
 
 textarea {
@@ -1197,6 +1198,129 @@ footer .footer-wrapper .footer-category::before {
   line-height: 32px;
   padding: 98px 30px 34px;
   margin-top: 54px;
+}
+
+.contact-us-wrapper {
+  width: 68%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 105px;
+  margin-bottom: 157px;
+  padding-bottom: 80px;
+}
+.contact-us-wrapper .contact-us-message {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  text-align: center;
+}
+.contact-us-wrapper .contact-us-form {
+  margin-top: 80px;
+  margin-left: 107px;
+  margin-right: 96px;
+}
+.contact-us-wrapper .contact-us-form .registration-input-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-us-wrapper .contact-us-form .registration-input-field .required-input {
+  width: 46px;
+  height: 23px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 17.38px;
+  background-color: #ea432d;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(13%);
+}
+.contact-us-wrapper .contact-us-form .registration-input-field .required-input-none {
+  width: 46px;
+  height: 23px;
+  background-color: transparent;
+}
+.contact-us-wrapper .contact-us-form .registration-input-field .input-name {
+  width: 157px;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 28px;
+  margin-left: 17px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-us-wrapper .contact-us-form .registration-input-field input {
+  width: 72%;
+  height: 40px;
+  background-color: #f2f4f6;
+  border-radius: 2px;
+}
+.contact-us-wrapper .contact-us-form .registration-user-mail {
+  font-size: 1.4em;
+  line-height: 28px;
+  color: #555555;
+}
+.contact-us-wrapper .contact-us-form textarea {
+  width: 72%;
+  height: 160px;
+}
+.contact-us-wrapper .contact-us-form select {
+  width: 224px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  /* デフォルトのスタイルを無効 */
+  padding-left: 15px;
+  /* 文字が左に寄るので右にずらす */
+  background-image: url(../images/contact-arrow.svg);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+.contact-us-wrapper .privacy-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "YuGothic";
+  font-size: 1.6em;
+  line-height: 23px;
+  margin-top: 40px;
+}
+.contact-us-wrapper .privacy-policy input[type=checkbox] {
+  transform: scale(1.68);
+  margin-right: 10px;
+}
+.contact-us-wrapper .privacy-policy a {
+  color: #00a3ff;
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-text-decoration: underline solid #00a3ff;
+          text-decoration: underline solid #00a3ff;
+}
+.contact-us-wrapper .privacy-policy .privacy-check {
+  margin-top: 25px;
+  line-height: 24px;
+}
+.contact-us-wrapper .privacy-protection-message {
+  font-size: 1.2em;
+  line-height: 17.38px;
+  text-align: center;
+  margin-top: 24px;
+}
+.contact-us-wrapper .register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 44px;
+  background-color: #ea432d;
+  color: white;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .registration-stage-headings {
