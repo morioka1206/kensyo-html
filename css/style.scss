@@ -21,6 +21,7 @@ $back-orange: #fcbd70;
 $back-beige: #edddca;
 $back-color: #f0eeea;
 $back-l-gray: #f5f5f5;
+$table-orange: #ffca89;
 
 // WEBフォント
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
@@ -110,6 +111,7 @@ body {
 @import "../layout/questions";
 @import "../layout/my-page";
 @import "../layout/tree";
+@import "../layout/orange-count";
 
 // 共通の設定
 
@@ -218,4 +220,40 @@ body {
   border: 1px solid $line-gray2;
   margin: 0 auto;
   margin-top: 46px;
+}
+
+// ページネーション
+.pagenation {
+  margin: 0 auto;
+
+  .pagenation-information {
+    font-size: 1.4em;
+    line-height: 20.27px;
+    margin-top: 20px;
+  }
+
+  .pagenation-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+
+    .pagenation-number {
+      width: 36px;
+      height: 42px;
+      border-radius: 2px;
+      font-size: 1.9em;
+      line-height: 27.51px;
+      color: $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $back-beige;
+    }
+
+    .current {
+      background-color: white;
+    }
+  }
 }

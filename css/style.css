@@ -1444,6 +1444,143 @@ footer .footer-wrapper .footer-category::before {
   margin-left: 0px !important;
 }
 
+.my-page {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 136px 0;
+}
+.my-page .my-page-right {
+  width: 45%;
+}
+.my-page .still-apply {
+  width: 100%;
+  height: 70px;
+  background-color: #ea432d;
+  color: white;
+  font-size: 2.4em;
+  line-height: 34.75px;
+  box-sizing: border-box;
+  outline: 1px solid white;
+  outline-offset: -7px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.my-page .cant-apply {
+  width: 100%;
+  height: 70px;
+  background-color: #ea432d;
+  color: white;
+  font-size: 2.4em;
+  line-height: 34.75px;
+  box-sizing: border-box;
+  outline: 1px solid white;
+  outline-offset: -7px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.my-page .user-prize-list-wrapper .user-prize-tabs {
+  display: flex;
+  gap: 4px;
+}
+.my-page .user-prize-list-wrapper .user-prize-tabs .user-prize-tab {
+  width: 50%;
+  height: 41px;
+  background-color: #d1d1d1;
+  border-radius: 2px 2px 0 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 23.17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-page .user-prize-list-wrapper .user-prize-tabs .active {
+  background-color: #f7941c;
+  color: white;
+}
+.my-page .user-prize-list-wrapper .user-prize-list {
+  background-color: white;
+  padding: 24px 30px 30px;
+  border-top: 4px solid #f7941c;
+}
+.my-page .user-prize-list-wrapper .user-prize-list .user-prize-day-select {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2px;
+}
+.my-page .user-prize-list-wrapper .user-prize-list .user-prize-day-select select {
+  width: 149px;
+  height: 28px;
+  border: 1px solid #d1d1d1;
+  background-color: white;
+  background-image: url(../images/contact-arrow.svg);
+}
+.my-page .user-prize-list-wrapper .user-prize-list table {
+  width: 100%;
+  margin-top: 10px;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table th {
+  height: 30px;
+  background-color: #ffca89;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 14.06px;
+  text-align: center;
+  border: 1px solid white;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .th-date {
+  width: 19%;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .th-title {
+  width: 59%;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .th-won-date {
+  width: 22%;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .rows {
+  height: 43px;
+  border-bottom: 1px dotted #b5b5b5;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .rows .date {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+  color: #f7941c;
+  font-weight: bold;
+  line-height: 16.41px;
+  text-align: center;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .rows .title {
+  font-size: 1.2em;
+  color: #555555;
+  line-height: 17.38px;
+  text-align: center;
+}
+.my-page .user-prize-list-wrapper .user-prize-list table .rows .won-date {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+  color: #555555;
+  font-weight: bold;
+  line-height: 16.41px;
+  text-align: center;
+}
+.my-page .user-prize-list-wrapper .pagenation-number {
+  background-color: #e8e8e8 !important;
+  color: #b5b5b5 !important;
+}
+.my-page .user-prize-list-wrapper .current {
+  background-color: #f7941c !important;
+  color: white !important;
+}
+
 .my-page-navi {
   width: 300px;
   height: 300px;
@@ -1539,6 +1676,60 @@ footer .footer-wrapper .footer-category::before {
   font-weight: bold;
   line-height: 46.34px;
   text-align: center;
+}
+
+.orange-counter-wrapper {
+  width: 100%;
+  height: 248px;
+  border-radius: 10px;
+  background: linear-gradient(#f7941c, #e35f00);
+  color: white;
+  padding: 40px 30px 30px;
+  margin-bottom: 40px;
+}
+.orange-counter-wrapper .welcome-message {
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 23.17px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.orange-counter-wrapper .counter-contents {
+  display: flex;
+  justify-content: center;
+  gap: 53px;
+}
+.orange-counter-wrapper .counter-contents .orange-title {
+  width: 207px;
+  height: 23px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #f7941c;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 23.17px;
+}
+.orange-counter-wrapper .counter-contents .orange-numbers .number {
+  font-size: 6.7em;
+  font-weight: bold;
+  line-height: 97.02px;
+  text-align: center;
+}
+.orange-counter-wrapper .counter-contents .orange-numbers .unit {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 43.44px;
+  text-align: center;
+}
+.orange-counter-wrapper .orange-time {
+  width: 100%;
+  font-size: 1.4em;
+  line-height: 20.27px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .registration-stage-headings {
@@ -1637,4 +1828,35 @@ footer .footer-wrapper .footer-category::before {
   border: 1px solid #d1d1d1;
   margin: 0 auto;
   margin-top: 46px;
+}
+
+.pagenation {
+  margin: 0 auto;
+}
+.pagenation .pagenation-information {
+  font-size: 1.4em;
+  line-height: 20.27px;
+  margin-top: 20px;
+}
+.pagenation .pagenation-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.pagenation .pagenation-numbers .pagenation-number {
+  width: 36px;
+  height: 42px;
+  border-radius: 2px;
+  font-size: 1.9em;
+  line-height: 27.51px;
+  color: #f7941c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edddca;
+}
+.pagenation .pagenation-numbers .current {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

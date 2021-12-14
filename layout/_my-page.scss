@@ -1,1 +1,168 @@
-// マイページ
+// マイページ全体とリスト部分
+
+.my-page {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 136px 0;
+
+  // マイページの右側
+  .my-page-right {
+    width: 45%;
+  }
+
+  // まだ応募できる
+  .still-apply {
+    width: 100%;
+    height: 70px;
+    background-color: $red;
+    color: white;
+    font-size: 2.4em;
+    line-height: 34.75px;
+    box-sizing: border-box;
+    outline: 1px solid white;
+    outline-offset: -7px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  // もう応募できない
+  .cant-apply {
+    width: 100%;
+    height: 70px;
+    background-color: $glay-light;
+    color: white;
+    font-size: 2.4em;
+    line-height: 34.75px;
+    box-sizing: border-box;
+    outline: 1px solid white;
+    outline-offset: -7px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  .user-prize-list-wrapper {
+    // 応募中・当選のタブ
+    .user-prize-tabs {
+      display: flex;
+      gap: 4px;
+
+      .user-prize-tab {
+        width: 50%;
+        height: 41px;
+        background-color: $line-gray2;
+        border-radius: 2px 2px 0 0;
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 23.17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .active {
+        background-color: $orange;
+        color: white;
+      }
+    }
+
+    .user-prize-list {
+      background-color: white;
+      padding: 24px 30px 30px;
+      border-top: 4px solid $orange;
+
+      // 日付で検索
+      .user-prize-day-select {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 2px;
+      }
+
+      .user-prize-day-select select {
+        width: 149px;
+        height: 28px;
+        border: 1px solid $line-gray2;
+        background-color: white;
+        background-image: url(../images/contact-arrow.svg);
+      }
+
+      // テーブル
+      table {
+        width: 100%;
+        margin-top: 10px;
+
+        th {
+          height: 30px;
+          background-color: $table-orange;
+          font-family: $roboto;
+          font-size: 1.2em;
+          font-weight: bold;
+          line-height: 14.06px;
+          text-align: center;
+          border: 1px solid white;
+        }
+
+        .th-date {
+          width: 19%;
+        }
+
+        .th-title {
+          width: 59%;
+        }
+
+        .th-won-date {
+          width: 22%;
+        }
+
+        .rows {
+          height: 43px;
+          border-bottom: 1px dotted #b5b5b5;
+
+          // 申込日付
+          .date {
+            font-family: $roboto;
+            font-size: 1.4em;
+            color: $orange;
+            font-weight: bold;
+            line-height: 16.41px;
+            text-align: center;
+          }
+
+          // 懸賞名
+          .title {
+            font-size: 1.2em;
+            color: $black;
+            line-height: 17.38px;
+            text-align: center;
+          }
+
+          .won-date {
+            font-family: $roboto;
+            font-size: 1.4em;
+            color: $black;
+            font-weight: bold;
+            line-height: 16.41px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .pagenation-number {
+      background-color: $line-gray1 !important;
+      color: $glay-light !important;
+    }
+
+    .current {
+      background-color: $orange !important;
+      color: white !important;
+    }
+  }
+}
