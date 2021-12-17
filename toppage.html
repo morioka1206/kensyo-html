@@ -19,6 +19,7 @@
     //共通パーツ読み込み
     $(function () {
       $("#header").load("./page-parts/_header.html");
+      $("#not-header").load("./page-parts/_not-user-header.html");
       $("#footer").load("./page-parts/_footer.html");
       $("#prize-list").load("./page-parts/_prize-list.html");
       $("#notification").load("./page-parts/_notification.html");
@@ -32,10 +33,10 @@
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="not-header"></header>
   <div class="prize-wrapper">
     <div class="prize-wrapper-left">
-      <div class="index-page-title recommend-title">おすすめ懸賞案件</div>
+      <div class="top-banner"><img src="./images/1207kensyo-banner.png" alt=""></div>
       <div id="prize-list"></div>
       <div id="notification"></div>
     </div>

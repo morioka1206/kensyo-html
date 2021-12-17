@@ -9,6 +9,7 @@
   // マイページの右側
   .my-page-right {
     width: 45%;
+    min-width: 535px;
   }
 
   // まだ応募できる
@@ -107,18 +108,29 @@
           line-height: 14.06px;
           text-align: center;
           border: 1px solid white;
+          vertical-align: middle;
+        }
+
+        th span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translateY(1px);
         }
 
         .th-date {
           width: 19%;
+          padding-right: 0.4%;
         }
 
         .th-title {
           width: 59%;
+          padding-right: 2.3%;
         }
 
         .th-won-date {
           width: 22%;
+          padding-right: 0.3%;
         }
 
         .rows {
@@ -140,7 +152,7 @@
             font-size: 1.2em;
             color: $black;
             line-height: 17.38px;
-            text-align: center;
+            text-align: left;
           }
 
           .won-date {

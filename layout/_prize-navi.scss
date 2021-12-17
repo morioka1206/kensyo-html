@@ -1,6 +1,4 @@
 .side-navi-wrapper {
-  min-width: 280px;
-
   // 共通の設定
   .prize-navi-heading {
     height: 40px;
@@ -27,13 +25,16 @@
 
     // 当選者数の表示
     .navi-number-winners {
-      height: 16px;
+      width: 28px;
+      height: 19px;
       background-color: $s-orange;
       border-radius: 1px;
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 17.38px;
       color: white;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-left: 9px;
     }
   }
@@ -100,7 +101,7 @@
     .area-select-heading::before {
       content: url(../images/navi-map.svg);
       margin-right: 6.7px;
-      transform: translateY(7%);
+      transform: translateY(6%);
     }
 
     .area-navi-column:after {
@@ -158,20 +159,23 @@
     border-radius: 2px;
     margin-top: 30px;
     background-color: white;
-    padding: 0 10px;
+    // padding: 0 10px;
 
     // 見出しのアイコン
     .popular-heading::before {
       content: url(../images/navi-crown.svg);
       margin-right: 6.7px;
-      transform: translateY(11%);
+      transform: translateY(9%);
     }
 
     // 人気の懸賞カラム
+    .navi-popular-column-wrapper {
+      border-top: 1px solid $line-gray1;
+    }
+
     .navi-popular-column {
       display: flex;
-      border-top: 1px solid $line-gray1;
-      padding: 10px 0;
+      padding: 10px 10px;
       gap: 11px;
 
       // 人気の懸賞サムネイル画像
@@ -200,6 +204,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            span {
+              transform: translateY(-7%);
+            }
           }
 
           // 当選人数
@@ -214,6 +222,10 @@
             justify-content: center;
             align-items: center;
             padding: 0 5px;
+
+            span {
+              transform: translateY(-4%);
+            }
           }
         }
 

@@ -1,6 +1,4 @@
 .prize-list-wrapper {
-  // height: 1294px;
-  min-width: 430px;
   border-radius: 2px;
   background-color: $back-orange;
   display: flex;
@@ -52,6 +50,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -53%);
+          }
         }
 
         // 当選人数
@@ -66,6 +72,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          span {
+            transform: translateY(-5%);
+          }
         }
 
         // 懸賞のタイトル

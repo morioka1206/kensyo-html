@@ -5,6 +5,8 @@
   align-items: center;
   gap: 26px;
   padding-top: 43px;
+  padding-left: 60px;
+  padding-right: 60px;
 
   .stage-heading,
   .stage-complete {
@@ -95,9 +97,304 @@
 
 .registration-wrapper {
   width: 68%;
+  min-width: 880px;
   background-color: white;
   margin: 105px auto 150px;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  color: $gray;
+
+  .provisional-registration-message {
+    font-size: 1.4em;
+    line-height: 20.27px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 62px;
+  }
+
+  // 仮登録用フォーム
+  .provisional-resgistration-form {
+    width: 57.1%;
+
+    label {
+      font-size: 1.4em;
+    }
+
+    .label {
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      width: 100%;
+      height: 70px;
+      background-color: #f2f4f6;
+      margin-top: 13px;
+      margin-bottom: 24px;
+    }
+
+    .required-input {
+      display: inline-block;
+      width: 46px;
+      height: 23px;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 17.38px;
+      background-color: $red;
+      border-radius: 3px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      margin-top: 22px;
+    }
+
+    .submit-button {
+      width: 230px;
+      height: 44px;
+      border-radius: 2px;
+      color: white;
+      background-color: $red;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+
+  // 仮登録メール送信完了
+  .provisional-registration-complete-message {
+    width: 57.1%;
+    font-size: 1.6em;
+    line-height: 23.17px;
+    margin-top: 30px;
+  }
+
+  .spam-mail-caution {
+    width: 57.1%;
+    font-size: 1.4em;
+    line-height: 20.27px;
+    margin-top: 30px;
+  }
+
+  .back-home-button {
+    width: 230px;
+    height: 44px;
+    color: $glay-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $line-gray2;
+    margin-top: 46px;
+  }
+
+  // 本登録
+  .main-registration-message {
+    font-size: 1.4em;
+    line-height: 20.27px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  // 本登録フォーム
+  .main-registration-form {
+    margin-top: 80px;
+    margin-left: 107px;
+    margin-right: 96px;
+
+    // フォーム入力欄
+    .registration-input-field {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px;
+
+      // 必須
+      .required-input {
+        width: 46px;
+        height: 23px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 17.38px;
+        background-color: $red;
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(13%);
+      }
+
+      .input-name {
+        width: 125px;
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 28px;
+        margin-left: 17px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input {
+        width: 72%;
+        height: 40px;
+        background-color: #f2f4f6;
+        border-radius: 2px;
+      }
+    }
+
+    .registration-user-mail {
+      font-size: 1.4em;
+      line-height: 28px;
+      color: $black;
+    }
+  }
+
+  // 職場名
+  .work-space {
+    position: relative;
+    width: 72%;
+
+    input {
+      width: 100% !important;
+    }
+  }
+  .work-space-message {
+    line-height: 28px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+
+  .postal-code-input {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    .address-search {
+      width: 82px;
+      height: 30px;
+      background-color: $glay-light;
+      color: white;
+      font-size: 1.3em;
+      font-weight: 500;
+      line-height: 28px;
+      filter: drop-shadow(0 2px 0 #555555);
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .birthday-select select {
+    height: 40px;
+    background-color: #f2f4f6;
+    border-radius: 2px;
+    font-size: 16px !important;
+  }
+
+  .year {
+    width: 85px;
+  }
+
+  .monthday {
+    width: 67px;
+  }
+
+  // プライバシーポリシー
+  .privacy-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $yu;
+    font-size: 1.6em;
+    line-height: 23px;
+    margin-top: 40px;
+
+    input[type="checkbox"] {
+      transform: scale(1.68);
+      margin-right: 10px;
+    }
+    a {
+      color: $link-blue;
+      font-family: $noto;
+      text-decoration: underline solid $link-blue;
+    }
+
+    .privacy-check {
+      margin-top: 25px;
+      line-height: 24px;
+    }
+  }
+
+  // 個人情報保護
+  .privacy-protection-message {
+    font-size: 1.2em;
+    line-height: 17.38px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .register-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 44px;
+    background-color: $red;
+    color: white;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  // 本登録完了
+  // .main-registration-complete-login {
+  //   width: 60%;
+  //   height: 70px;
+  //   background-color: $red;
+  //   color: white;
+  //   font-size: 2.7em;
+  //   font-weight: bold;
+  //   line-height: 39.1px;
+  //   border-radius: 5px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin: 0 auto;
+  //   margin-top: 75px;
+  //   margin-bottom: 32px;
+  // }
+
+  // ホームへ戻る
+  .back-home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 46px;
+  }
+}
+
+// 本登録フォーム
+
+.main-registration-wrapper {
+  width: 68%;
+  min-width: 880px;
+  background-color: white;
+  margin: 105px auto 150px;
+  display: flex;
+  // align-items: center;
   flex-direction: column;
   padding-bottom: 80px;
   color: $gray;
@@ -205,6 +502,7 @@
 
     // フォーム入力欄
     .registration-input-field {
+      width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -294,6 +592,7 @@
     height: 40px;
     background-color: #f2f4f6;
     border-radius: 2px;
+    font-size: 16px;
   }
 
   .year {
@@ -312,7 +611,7 @@
     font-family: $yu;
     font-size: 1.6em;
     line-height: 23px;
-    margin-top: 40px;
+    margin-top: 80px;
 
     input[type="checkbox"] {
       transform: scale(1.68);
@@ -321,6 +620,7 @@
     a {
       color: $link-blue;
       font-family: $noto;
+      font-weight: bold;
       text-decoration: underline solid $link-blue;
     }
 
@@ -348,12 +648,12 @@
     color: white;
     border-radius: 2px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
   // 本登録完了
   .main-registration-complete-login {
-    width: 60%;
+    width: 590px;
     height: 70px;
     background-color: $red;
     color: white;
@@ -367,6 +667,7 @@
     margin: 0 auto;
     margin-top: 75px;
     margin-bottom: 32px;
+    filter: drop-shadow(0 3px 0 #a62311) !important;
   }
 
   // ホームへ戻る
@@ -375,5 +676,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 46px;
   }
 }

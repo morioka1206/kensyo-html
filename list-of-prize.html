@@ -1,4 +1,4 @@
-<!-- トップページ -->
+<!-- 懸賞一覧ページ -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -35,7 +35,20 @@
   <header id="header"></header>
   <div class="prize-wrapper">
     <div class="prize-wrapper-left">
-      <div class="index-page-title recommend-title">おすすめ懸賞案件</div>
+      <div class="prize-category-title">
+        <div class="index-page-title">“カテゴリ名”の懸賞一覧<span class="numbers-category">全00件</span></div>
+        <select name="お問い合わせ種別" id="" required class="inquiry-type">
+          <option value="">人気順</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+        </select>
+      </div>
       <div id="prize-list"></div>
       <div id="notification"></div>
     </div>

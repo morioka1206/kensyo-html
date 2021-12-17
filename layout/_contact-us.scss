@@ -15,6 +15,7 @@
   margin-top: 105px;
   margin-bottom: 157px;
   padding-bottom: 80px;
+  min-width: 680px;
 
   .contact-us-message {
     font-size: 1.4em;
@@ -55,9 +56,11 @@
 
       // 必須でない
       .required-input-none {
-        width: 46px;
+        width: 46px !important;
+        // width: 46px;
         height: 23px;
         background-color: transparent;
+        min-width: 46px;
       }
 
       .input-name {
@@ -112,7 +115,7 @@
     font-family: $yu;
     font-size: 1.6em;
     line-height: 23px;
-    margin-top: 40px;
+    margin-top: 80px;
 
     input[type="checkbox"] {
       transform: scale(1.68);
@@ -121,6 +124,7 @@
     a {
       color: $link-blue;
       font-family: $noto;
+      font-weight: bold;
       text-decoration: underline solid $link-blue;
     }
 
@@ -148,13 +152,19 @@
     color: white;
     border-radius: 2px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 46px;
+  }
+
+  // お問い合わせ確認ページの送信ボタン
+  .confirm {
+    margin-top: 80px;
   }
 
   // お問い合わせ内容確認
   .input-entered-inquiry {
     width: 72%;
     justify-content: center;
+    color: $black;
     font-size: 1.6em;
     line-height: 28px;
     align-items: center;
@@ -162,6 +172,7 @@
 
   // テキストエリアだけ特殊設定
   .input-field-confirmation-inquiry {
+    color: $black;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px;
@@ -206,7 +217,7 @@
 
   .input-entered-inquiry-textarea {
     width: 72%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 20.27px;
   }
 

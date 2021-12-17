@@ -1,7 +1,7 @@
 .application-detail-wrapper {
   background-color: white;
-  height: 955px;
   padding: 30px;
+  padding-bottom: 60px;
 
   .each-prize-detail {
     min-width: 410px;
@@ -34,6 +34,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        span {
+          transform: translateY(-5%);
+        }
       }
 
       // 当選人数
@@ -48,6 +52,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        span {
+          transform: translateY(-5%);
+        }
       }
 
       // 懸賞のタイトル
@@ -65,9 +73,12 @@
       .application-detail-end-date,
       .application-detail-number-winners,
       .application-detail-provide-enterprise {
+        // height: 27.7px;
         display: flex;
         justify-content: space-between;
         border-top: 1px dotted #b5b5b5;
+        align-items: center;
+        padding: 4px 0;
       }
 
       .application-detail-information-name {
@@ -87,7 +98,7 @@
 
   // 今すぐ応募ボタン
   .now-application-button {
-    width: calc(100% - 60px);
+    width: 590px;
     height: 70px;
     background-color: $red;
     margin: 0 auto;
@@ -107,6 +118,10 @@
     margin-top: 44px;
     margin-bottom: 30px;
 
+    p {
+      transform: translateY(6%);
+    }
+
     // お申し込みアイコン
     p:before {
       content: "";
@@ -117,6 +132,7 @@
       height: 42.57px;
       margin-right: 12px;
       vertical-align: middle;
+      transform: translateY(-2px);
     }
   }
 
@@ -130,6 +146,12 @@
     text-align: justify;
     border-top: 3px solid $orange;
     border-bottom: 1px solid $orange;
+    display: flex;
+    align-items: center;
+
+    p {
+      transform: translateY(-2px);
+    }
   }
 
   // 応募概要

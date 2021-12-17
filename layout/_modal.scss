@@ -1,0 +1,94 @@
+// 応募確認のモーダル
+
+.modal-body {
+  width: 54.1%;
+
+  // 応募確認・応募完了タイトル
+  .modal-title {
+    height: 90px;
+    background-color: $orange;
+    color: white;
+    font-size: 3.2em;
+    font-weight: bold;
+    line-height: 46.34px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-content {
+    padding: 50px 30px 60px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+
+    .modal-message {
+      font-size: 2.3em;
+      font-weight: bold;
+      line-height: 33.3px;
+      text-align: center;
+    }
+  }
+
+  // 応募の際のボタン
+  .modal-apply-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // 応募するボタン
+  .prize-apply-button {
+    width: 313.09px;
+    height: 72px;
+    color: white;
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 28.96px;
+    border-radius: 3px;
+  }
+
+  // 戻るボタン
+  .back-home-button {
+    width: 313.09px;
+    height: 72px;
+    color: $glay-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $line-gray2;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 28.96px;
+    border-radius: 3px;
+  }
+
+  // サイトでは発表しない注意
+  .application-completed-caution {
+    color: $red;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 26.06px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  // 応募した際のメッセージ
+  .application-process-message {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 26.06px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}

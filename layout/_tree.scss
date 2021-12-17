@@ -7,7 +7,7 @@
 
   // / マイページのタイトル
   .my-page-title {
-    font-size: 2.4em;
+    font-size: 1.6em;
     font-weight: bold;
     line-height: 34.75px;
     background-color: white;
@@ -29,13 +29,17 @@
       height: 45px;
       background-color: white;
       border-radius: 2px;
-      filter: drop-shadow(0 0 6px #bb6906);
+      filter: drop-shadow(0 0 3px #bb6906);
       font-size: 1.6em;
       font-weight: bold;
       line-height: 23.17px;
       display: flex;
       align-items: center;
       padding-left: 15px;
+
+      p {
+        transform: translateY(-7%);
+      }
     }
 
     .link-to-user-information::before {
@@ -47,7 +51,7 @@
     .tree-wrapper {
       background-color: white;
       border-radius: 2px;
-      filter: drop-shadow(0 0 6px #bb6906);
+      filter: drop-shadow(0 0 3px #bb6906);
       padding: 23px 23px 30px;
       margin-top: 9px;
 
@@ -79,6 +83,14 @@
           font-weight: bold;
           line-height: 46.34px;
           text-align: center;
+          transform: translateY(11%);
+
+          .unit {
+            font-size: 0.5em;
+            font-weight: bold;
+            line-height: 23.17px;
+            text-align: center;
+          }
         }
       }
 
@@ -103,10 +115,18 @@
         }
 
         .next-level-point {
-          font-size: 3.2em;
+          font-size: 2.8em;
           font-weight: bold;
           line-height: 46.34px;
           text-align: center;
+          transform: translateY(-10%);
+
+          .unit {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 23.17px;
+            text-align: center;
+          }
         }
       }
     }

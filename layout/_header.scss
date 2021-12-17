@@ -2,10 +2,11 @@ header {
   // ヘッダー上段
   .top-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 14px 180px;
     background-color: white;
     filter: drop-shadow(0 2px 2px #bb690680);
+    gap: 155px;
 
     .top-left {
       display: flex;
@@ -15,11 +16,40 @@ header {
 
     .top-right {
       display: flex;
+      align-items: center;
     }
     // 検索窓
     .search-box {
       width: 237px;
-      margin: 10px;
+      // margin: 10px;
+      position: relative;
+
+      // プレースホルダーにアイコンを置く（Font Awesome）
+      // input.font-awesome {
+      //   font-family: FontAwesome;
+      //   font-style: normal;
+      //   font-weight: normal;
+      //   text-decoration: inherit;
+      //   padding-left: 8px;
+      // }
+
+      // 検索ボックスの虫眼鏡
+      .input-svg:before {
+        content: "";
+        display: block;
+        background-image: url(../images/search-icon.svg);
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        position: absolute;
+        top: 9px;
+        left: 7px;
+      }
+
+      input::placeholder {
+        color: $glay-light;
+        font-size: 12px;
+      }
 
       form {
         width: 237px;
@@ -31,15 +61,20 @@ header {
       // 入力欄
       input[type="text"] {
         height: 32px;
-        width: 76%;
+        width: 182px;
+        background-color: white;
+        padding-left: 25px;
       }
 
       // 検索ボタン
       input[type="submit"] {
         color: white;
         background-color: $orange;
-        width: 24%;
+        width: 55px;
         height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
     // マイページへ
@@ -76,12 +111,64 @@ header {
     .logout-button::after {
       content: "";
       display: inline-block;
-      width: 13.9px;
+      width: 17.9px;
       height: 20px;
       background-image: url(../images/logout-icon.svg);
-      background-size: contain;
+      background-size: cover;
       margin-left: 5px;
-      transform: translateY(10%);
+      transform: translateY(-1%);
+    }
+
+    // 新規会員登録ボタン
+    .membership-registration-button {
+      width: 111px;
+      height: 58px;
+      background-color: $orange;
+      font-size: 1.8em;
+      line-height: 19px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 12px;
+      border-radius: 2px;
+
+      // 新規無料
+      .new-free {
+        color: #ffe400;
+      }
+
+      // 会員登録
+      .membership-registration {
+        color: white;
+      }
+    }
+
+    // ログインボタン
+    .login-button {
+      width: 160px;
+      height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6em;
+      line-height: 23.17px;
+      font-weight: bold;
+      color: white;
+      background-color: $red;
+      border-radius: 2px;
+      margin-left: 8px;
+    }
+
+    .login-button::after {
+      content: "";
+      display: inline-block;
+      width: 17.9px;
+      height: 21px;
+      background-image: url(../images/log-in-icon.svg);
+      background-size: contain;
+      margin-left: 13px;
+      transform: translateY(-1%);
     }
   }
 
@@ -97,12 +184,12 @@ header {
       align-items: center;
       height: 100%;
 
-      ul {
-        padding: 0;
+      .header-navi-contents {
+        padding: 10px;
         display: flex;
       }
 
-      li {
+      .navi-content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -115,7 +202,15 @@ header {
         white-space: nowrap;
       }
 
-      li:before {
+      .current-page {
+        height: 58px;
+        background-color: white;
+        color: $orange;
+        border: 4px solid $orange;
+        box-sizing: border-box;
+      }
+
+      .navi-content:before {
         content: "";
         width: 1px;
         height: 54px;
@@ -124,20 +219,24 @@ header {
         z-index: 1;
         position: absolute;
         left: 0;
-        top: -15px;
+        top: 2px;
       }
 
-      li:last-child:after {
-        content: "";
-        width: 1px;
-        height: 54px;
-        box-shadow: -1px 0px 0px #f4b86f;
-        background-color: #bb6906;
-        z-index: 1;
-        position: absolute;
-        right: 0;
-        top: -15px;
+      .navi-content:first-child:before {
+        display: none;
       }
+
+      // li:last-child:after {
+      //   content: "";
+      //   width: 1px;
+      //   height: 54px;
+      //   box-shadow: -1px 0px 0px #f4b86f;
+      //   background-color: #bb6906;
+      //   z-index: 1;
+      //   position: absolute;
+      //   right: 0;
+      //   top: -15px;
+      // }
     }
   }
 }

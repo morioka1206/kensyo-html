@@ -39,6 +39,9 @@ html {
   scroll-behavior: smooth;
   // 基本の文字の色はグレー
   color: $gray;
+  // max-width: 1440px;
+  // width: 1440px;
+  margin: 0 auto;
 }
 
 // リンクの下線と青色をなしに
@@ -80,6 +83,7 @@ select {
   padding-left: 15px; /* 文字が左に寄るので右にずらす */
   background-image: url(../images/kensyo-select-arrow.svg);
   background-position: right 15px center;
+  background-position: 85% 54.5%;
   background-repeat: no-repeat;
 }
 
@@ -112,6 +116,7 @@ body {
 @import "../layout/my-page";
 @import "../layout/tree";
 @import "../layout/orange-count";
+@import "../layout/modal";
 
 // 共通の設定
 
@@ -220,6 +225,10 @@ body {
   border: 1px solid $line-gray2;
   margin: 0 auto;
   margin-top: 46px;
+  border-radius: 2px;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 20.27px;
 }
 
 // ページネーション
@@ -229,6 +238,8 @@ body {
   .pagenation-information {
     font-size: 1.4em;
     line-height: 20.27px;
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
   }
 
@@ -256,4 +267,30 @@ body {
       background-color: white;
     }
   }
+}
+
+// トップへ戻るボタン
+.top-link-button {
+  position: absolute;
+  right: 60px;
+  top: -40%;
+}
+
+// ログインページへ
+.main-registration-complete-login {
+  width: 560px;
+  height: 70px;
+  background-color: $red;
+  color: white;
+  font-size: 2.7em;
+  font-weight: bold;
+  line-height: 39.1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 32px;
+  filter: drop-shadow(0 3px 0 #a62311);
 }
